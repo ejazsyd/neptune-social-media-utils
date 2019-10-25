@@ -41,7 +41,7 @@ public class BulkLoadData {
         		ContentType.create("application/json"));
 
         HttpClient httpClient = HttpClientBuilder.create().build();
-        HttpPost request = new HttpPost("http://"+neptuneEndpoint+":"+port+"/loader");
+        HttpPost request = new HttpPost("https://"+neptuneEndpoint+":"+port+"/loader");
         request.setHeader("Content-Type", "application/json");
         request.setEntity(entity);
 
